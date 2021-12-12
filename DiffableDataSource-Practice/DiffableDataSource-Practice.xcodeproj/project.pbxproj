@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B4D45A427667A3E002B6844 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4D45A327667A3E002B6844 /* MainCell.swift */; };
 		5B5806B42757437E0008DA6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5806B32757437E0008DA6F /* AppDelegate.swift */; };
 		5B5806B62757437E0008DA6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5806B52757437E0008DA6F /* SceneDelegate.swift */; };
 		5B5806B82757437E0008DA6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5806B72757437E0008DA6F /* ViewController.swift */; };
 		5B5806BB2757437E0008DA6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B5806B92757437E0008DA6F /* Main.storyboard */; };
 		5B5806BD275743840008DA6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5806BC275743840008DA6F /* Assets.xcassets */; };
 		5B5806C0275743840008DA6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B5806BE275743840008DA6F /* LaunchScreen.storyboard */; };
+		5B5806C8275756710008DA6F /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5806C7275756710008DA6F /* Feed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B4D45A327667A3E002B6844 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		5B5806B02757437E0008DA6F /* DiffableDataSource-Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DiffableDataSource-Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5806B32757437E0008DA6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B5806B52757437E0008DA6F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		5B5806BC275743840008DA6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B5806BF275743840008DA6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B5806C1275743840008DA6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B5806C7275756710008DA6F /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,10 @@
 		5B5806B22757437E0008DA6F /* DiffableDataSource-Practice */ = {
 			isa = PBXGroup;
 			children = (
+				5B5806C7275756710008DA6F /* Feed.swift */,
 				5B5806B32757437E0008DA6F /* AppDelegate.swift */,
 				5B5806B52757437E0008DA6F /* SceneDelegate.swift */,
+				5B4D45A327667A3E002B6844 /* MainCell.swift */,
 				5B5806B72757437E0008DA6F /* ViewController.swift */,
 				5B5806B92757437E0008DA6F /* Main.storyboard */,
 				5B5806BC275743840008DA6F /* Assets.xcassets */,
@@ -138,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B5806C8275756710008DA6F /* Feed.swift in Sources */,
 				5B5806B82757437E0008DA6F /* ViewController.swift in Sources */,
 				5B5806B42757437E0008DA6F /* AppDelegate.swift in Sources */,
 				5B5806B62757437E0008DA6F /* SceneDelegate.swift in Sources */,
+				5B4D45A427667A3E002B6844 /* MainCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
