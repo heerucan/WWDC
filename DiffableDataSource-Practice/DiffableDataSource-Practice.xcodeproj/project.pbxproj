@@ -14,7 +14,10 @@
 		5B5806BB2757437E0008DA6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B5806B92757437E0008DA6F /* Main.storyboard */; };
 		5B5806BD275743840008DA6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5806BC275743840008DA6F /* Assets.xcassets */; };
 		5B5806C0275743840008DA6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B5806BE275743840008DA6F /* LaunchScreen.storyboard */; };
-		5B5806C8275756710008DA6F /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5806C7275756710008DA6F /* Feed.swift */; };
+		5BD6E95527672AF30077E19B /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD6E95427672AF30077E19B /* VideosViewController.swift */; };
+		5BD6E95727672F4D0077E19B /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD6E95627672F4D0077E19B /* Video.swift */; };
+		5BD6E959276742C20077E19B /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD6E958276742C20077E19B /* VideoCollectionViewCell.swift */; };
+		5BD6E95B2767D9340077E19B /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD6E95A2767D9340077E19B /* Section.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +30,10 @@
 		5B5806BC275743840008DA6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B5806BF275743840008DA6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B5806C1275743840008DA6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B5806C7275756710008DA6F /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		5BD6E95427672AF30077E19B /* VideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
+		5BD6E95627672F4D0077E19B /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		5BD6E958276742C20077E19B /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		5BD6E95A2767D9340077E19B /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +66,68 @@
 		5B5806B22757437E0008DA6F /* DiffableDataSource-Practice */ = {
 			isa = PBXGroup;
 			children = (
-				5B5806C7275756710008DA6F /* Feed.swift */,
-				5B5806B32757437E0008DA6F /* AppDelegate.swift */,
-				5B5806B52757437E0008DA6F /* SceneDelegate.swift */,
-				5B4D45A327667A3E002B6844 /* MainCell.swift */,
-				5B5806B72757437E0008DA6F /* ViewController.swift */,
-				5B5806B92757437E0008DA6F /* Main.storyboard */,
-				5B5806BC275743840008DA6F /* Assets.xcassets */,
-				5B5806BE275743840008DA6F /* LaunchScreen.storyboard */,
-				5B5806C1275743840008DA6F /* Info.plist */,
+				5BD6E95027672A220077E19B /* Source */,
+				5BD6E95127672A2D0077E19B /* Resource */,
 			);
 			path = "DiffableDataSource-Practice";
+			sourceTree = "<group>";
+		};
+		5BD6E94E27672A050077E19B /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				5B5806B32757437E0008DA6F /* AppDelegate.swift */,
+				5B5806B52757437E0008DA6F /* SceneDelegate.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		5BD6E94F27672A110077E19B /* Self-Practice */ = {
+			isa = PBXGroup;
+			children = (
+				5B4D45A327667A3E002B6844 /* MainCell.swift */,
+				5B5806B72757437E0008DA6F /* ViewController.swift */,
+			);
+			path = "Self-Practice";
+			sourceTree = "<group>";
+		};
+		5BD6E95027672A220077E19B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				5BD6E95227672A3A0077E19B /* Storyboard */,
+				5BD6E94F27672A110077E19B /* Self-Practice */,
+				5BD6E95327672ACA0077E19B /* Ray-Tutorial */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		5BD6E95127672A2D0077E19B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				5B5806C1275743840008DA6F /* Info.plist */,
+				5B5806BC275743840008DA6F /* Assets.xcassets */,
+				5BD6E94E27672A050077E19B /* Support */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		5BD6E95227672A3A0077E19B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5B5806B92757437E0008DA6F /* Main.storyboard */,
+				5B5806BE275743840008DA6F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		5BD6E95327672ACA0077E19B /* Ray-Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				5BD6E95427672AF30077E19B /* VideosViewController.swift */,
+				5BD6E95627672F4D0077E19B /* Video.swift */,
+				5BD6E958276742C20077E19B /* VideoCollectionViewCell.swift */,
+				5BD6E95A2767D9340077E19B /* Section.swift */,
+			);
+			path = "Ray-Tutorial";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,9 +201,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B5806C8275756710008DA6F /* Feed.swift in Sources */,
+				5BD6E959276742C20077E19B /* VideoCollectionViewCell.swift in Sources */,
+				5BD6E95527672AF30077E19B /* VideosViewController.swift in Sources */,
+				5BD6E95727672F4D0077E19B /* Video.swift in Sources */,
 				5B5806B82757437E0008DA6F /* ViewController.swift in Sources */,
 				5B5806B42757437E0008DA6F /* AppDelegate.swift in Sources */,
+				5BD6E95B2767D9340077E19B /* Section.swift in Sources */,
 				5B5806B62757437E0008DA6F /* SceneDelegate.swift in Sources */,
 				5B4D45A427667A3E002B6844 /* MainCell.swift in Sources */,
 			);
@@ -299,7 +359,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5GQ6QL9S3X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "DiffableDataSource-Practice/Info.plist";
+				INFOPLIST_FILE = "DiffableDataSource-Practice/Resource/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -327,7 +387,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5GQ6QL9S3X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "DiffableDataSource-Practice/Info.plist";
+				INFOPLIST_FILE = "DiffableDataSource-Practice/Resource/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
