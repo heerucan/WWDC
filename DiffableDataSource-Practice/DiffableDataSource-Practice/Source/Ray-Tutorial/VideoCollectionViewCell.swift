@@ -66,7 +66,6 @@ class VideoCollectionViewCell: UICollectionViewCell {
             subtitleLabel.heightAnchor.constraint(equalToConstant: 22)
         ])
     }
-
     
     var video: Video? {
       didSet {
