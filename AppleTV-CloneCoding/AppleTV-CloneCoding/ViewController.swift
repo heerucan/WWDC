@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var dataSource: UICollectionViewDiffableDataSource<
+    var dataSource: UICollectionViewDiffableDataSource<Section, Movie>
     
     // MARK: - Lifecycle
     

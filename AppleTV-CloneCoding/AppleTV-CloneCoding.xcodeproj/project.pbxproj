@@ -15,6 +15,7 @@
 		5B785C3B277465B300DD8DEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B785C3A277465B300DD8DEF /* Assets.xcassets */; };
 		5B785C3E277465B300DD8DEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B785C3C277465B300DD8DEF /* LaunchScreen.storyboard */; };
 		5B909FF62775E677000F44CE /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B909FF52775E677000F44CE /* Section.swift */; };
+		5B909FF82775EF2D000F44CE /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B909FF72775EF2D000F44CE /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		5B785C3D277465B300DD8DEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B785C3F277465B300DD8DEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B909FF52775E677000F44CE /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		5B909FF72775EF2D000F44CE /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		9EB575BA9EC095592AAE1C9F /* Pods_AppleTV_CloneCoding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppleTV_CloneCoding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A629999E5E3C5E98CE72BCA8 /* Pods-AppleTV-CloneCoding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleTV-CloneCoding.release.xcconfig"; path = "Target Support Files/Pods-AppleTV-CloneCoding/Pods-AppleTV-CloneCoding.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				5B909FF52775E677000F44CE /* Section.swift */,
+				5B909FF72775EF2D000F44CE /* Movie.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -99,7 +102,6 @@
 				05FC1E7EB1159F50D366C289 /* Pods-AppleTV-CloneCoding.debug.xcconfig */,
 				A629999E5E3C5E98CE72BCA8 /* Pods-AppleTV-CloneCoding.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -222,6 +224,7 @@
 				5B909FF62775E677000F44CE /* Section.swift in Sources */,
 				5B785C32277465B000DD8DEF /* AppDelegate.swift in Sources */,
 				5B785C34277465B000DD8DEF /* SceneDelegate.swift in Sources */,
+				5B909FF82775EF2D000F44CE /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
