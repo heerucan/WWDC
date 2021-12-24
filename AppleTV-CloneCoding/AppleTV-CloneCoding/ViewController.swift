@@ -8,12 +8,32 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    // MARK: - Properties
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    var dataSource: UICollectionViewDiffableDataSource<
+    
+    // MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        configureDataSource()
+        setupAutoLayout()
     }
-
+    
+    // MARK: - UI & Layout
+    
+    private func configureDataSource() {
+        
+    }
+    
+    func setupAutoLayout() {
+        
+    }
+    
+    // MARK: - Custom Method
 
 }
 

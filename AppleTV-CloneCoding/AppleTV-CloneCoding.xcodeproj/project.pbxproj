@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4628BF9703FF90F2C90818C6 /* Pods_AppleTV_CloneCoding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB575BA9EC095592AAE1C9F /* Pods_AppleTV_CloneCoding.framework */; };
 		5B785C32277465B000DD8DEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B785C31277465B000DD8DEF /* AppDelegate.swift */; };
 		5B785C34277465B000DD8DEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B785C33277465B000DD8DEF /* SceneDelegate.swift */; };
 		5B785C36277465B000DD8DEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B785C35277465B000DD8DEF /* ViewController.swift */; };
 		5B785C39277465B000DD8DEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B785C37277465B000DD8DEF /* Main.storyboard */; };
 		5B785C3B277465B300DD8DEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B785C3A277465B300DD8DEF /* Assets.xcassets */; };
 		5B785C3E277465B300DD8DEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B785C3C277465B300DD8DEF /* LaunchScreen.storyboard */; };
+		5B909FF62775E677000F44CE /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B909FF52775E677000F44CE /* Section.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05FC1E7EB1159F50D366C289 /* Pods-AppleTV-CloneCoding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleTV-CloneCoding.debug.xcconfig"; path = "Target Support Files/Pods-AppleTV-CloneCoding/Pods-AppleTV-CloneCoding.debug.xcconfig"; sourceTree = "<group>"; };
 		5B785C2E277465B000DD8DEF /* AppleTV-CloneCoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppleTV-CloneCoding.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B785C31277465B000DD8DEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B785C33277465B000DD8DEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		5B785C3A277465B300DD8DEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B785C3D277465B300DD8DEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B785C3F277465B300DD8DEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B909FF52775E677000F44CE /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		9EB575BA9EC095592AAE1C9F /* Pods_AppleTV_CloneCoding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppleTV_CloneCoding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A629999E5E3C5E98CE72BCA8 /* Pods-AppleTV-CloneCoding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleTV-CloneCoding.release.xcconfig"; path = "Target Support Files/Pods-AppleTV-CloneCoding/Pods-AppleTV-CloneCoding.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4628BF9703FF90F2C90818C6 /* Pods_AppleTV_CloneCoding.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				5B785C30277465B000DD8DEF /* AppleTV-CloneCoding */,
 				5B785C2F277465B000DD8DEF /* Products */,
+				F4C004F54D88272D07BE1C14 /* Pods */,
+				96EAC18903A8F7EAF6438033 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +65,7 @@
 		5B785C30277465B000DD8DEF /* AppleTV-CloneCoding */ = {
 			isa = PBXGroup;
 			children = (
+				5B909FF42775E66B000F44CE /* Model */,
 				5B785C31277465B000DD8DEF /* AppDelegate.swift */,
 				5B785C33277465B000DD8DEF /* SceneDelegate.swift */,
 				5B785C35277465B000DD8DEF /* ViewController.swift */,
@@ -67,6 +77,32 @@
 			path = "AppleTV-CloneCoding";
 			sourceTree = "<group>";
 		};
+		5B909FF42775E66B000F44CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5B909FF52775E677000F44CE /* Section.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		96EAC18903A8F7EAF6438033 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EB575BA9EC095592AAE1C9F /* Pods_AppleTV_CloneCoding.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4C004F54D88272D07BE1C14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05FC1E7EB1159F50D366C289 /* Pods-AppleTV-CloneCoding.debug.xcconfig */,
+				A629999E5E3C5E98CE72BCA8 /* Pods-AppleTV-CloneCoding.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B785C42277465B300DD8DEF /* Build configuration list for PBXNativeTarget "AppleTV-CloneCoding" */;
 			buildPhases = (
+				E3656CDB8E01C3BEA503D05F /* [CP] Check Pods Manifest.lock */,
 				5B785C2A277465B000DD8DEF /* Sources */,
 				5B785C2B277465B000DD8DEF /* Frameworks */,
 				5B785C2C277465B000DD8DEF /* Resources */,
+				383F92D9EB7082D655FCF167 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +171,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		383F92D9EB7082D655FCF167 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppleTV-CloneCoding/Pods-AppleTV-CloneCoding-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppleTV-CloneCoding/Pods-AppleTV-CloneCoding-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppleTV-CloneCoding/Pods-AppleTV-CloneCoding-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3656CDB8E01C3BEA503D05F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppleTV-CloneCoding-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5B785C2A277465B000DD8DEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5B785C36277465B000DD8DEF /* ViewController.swift in Sources */,
+				5B909FF62775E677000F44CE /* Section.swift in Sources */,
 				5B785C32277465B000DD8DEF /* AppDelegate.swift in Sources */,
 				5B785C34277465B000DD8DEF /* SceneDelegate.swift in Sources */,
 			);
@@ -284,6 +365,7 @@
 		};
 		5B785C43277465B300DD8DEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05FC1E7EB1159F50D366C289 /* Pods-AppleTV-CloneCoding.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +394,7 @@
 		};
 		5B785C44277465B300DD8DEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A629999E5E3C5E98CE72BCA8 /* Pods-AppleTV-CloneCoding.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
