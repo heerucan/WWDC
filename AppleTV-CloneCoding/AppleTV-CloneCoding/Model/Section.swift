@@ -2,11 +2,11 @@
 //  Section.swift
 //  AppleTV-CloneCoding
 //
-//  Created by Thisisme Hi on 2021/12/24.
+//  Created by Thisisme Hi on 2021/12/26.
 //
 
 import Foundation
 
-enum Section {
-    case main
+enum Section: CaseIterable, Hashable {
+    case Big, Middle, Small
 }

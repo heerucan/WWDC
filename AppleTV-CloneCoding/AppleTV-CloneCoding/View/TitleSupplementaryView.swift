@@ -11,6 +11,8 @@ import SnapKit
 import Then
 
 class SectionHeader: UICollectionReusableView {
+    
+    static let identifier = "SectionHeader"
 
     // MARK: - Properties
     private lazy var stackView = UIStackView(arrangedSubviews: [

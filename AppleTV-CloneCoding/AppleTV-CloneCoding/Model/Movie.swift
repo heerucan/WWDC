@@ -10,11 +10,11 @@ import UIKit
 class Movie: Hashable {
         
     var id = UUID()
-    var poster: UIImage
+    var poster: UIImage?
     var genre: String?
     var price: Int?
     
-    init(poster: UIImage,
+    init(poster: UIImage? = nil,
          genre: String? = nil,
          price: Int? = nil) {
         self.poster = poster
