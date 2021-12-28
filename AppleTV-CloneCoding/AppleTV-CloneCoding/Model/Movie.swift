@@ -30,3 +30,30 @@ class Movie: Hashable {
         lhs.id == rhs.id
     }
 }
+
+extension Movie {
+    static let allBigMovies = [
+        Movie(poster: UIImage(named: "imgBigPoster"), genre: nil, price: nil),
+        Movie(poster: UIImage(named: "imgBigPoster"), genre: nil, price: nil),
+        Movie(poster: UIImage(named: "imgBigPoster"), genre: nil, price: nil),
+        Movie(poster: UIImage(named: "imgBigPoster"), genre: nil, price: nil),
+        Movie(poster: UIImage(named: "imgBigPoster"), genre: nil, price: nil)
+    ]
+    
+    static let allMiddleMovies = [
+        Movie(poster: UIImage(named: "imgMiddlePoster"), genre: nil, price: nil),
+        Movie(poster: UIImage(named: "imgMiddlePoster"), genre: nil, price: nil),
+        Movie(poster: UIImage(named: "imgMiddlePoster"), genre: nil, price: nil),
+        Movie(poster: UIImage(named: "imgMiddlePoster"), genre: nil, price: nil),
+        Movie(poster: UIImage(named: "imgMiddlePoster"), genre: nil, price: nil),
+        Movie(poster: UIImage(named: "imgMiddlePoster"), genre: nil, price: nil)
+    ]
+    
+    static let allSmallMovies = [
+        Movie(poster: UIImage(named: "imgSmallPoster"), genre: nil, price: nil),
+        Movie(poster: UIImage(named: "imgSmallPoster"), genre: nil, price: nil),
+        Movie(poster: UIImage(named: "imgSmallPoster"), genre: nil, price: nil),
+        Movie(poster: UIImage(named: "imgSmallPoster"), genre: nil, price: nil),
+        Movie(poster: UIImage(named: "imgSmallPoster"), genre: nil, price: nil)
+    ]
+}

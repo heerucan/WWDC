@@ -1,5 +1,5 @@
 //
-//  SectionHeader.swift
+//  TitleSupplementaryView.swift
 //  AppleTV-CloneCoding
 //
 //  Created by Thisisme Hi on 2021/12/24.
@@ -10,9 +10,9 @@ import UIKit
 import SnapKit
 import Then
 
-class SectionHeader: UICollectionReusableView {
+class TitleSupplementaryView: UICollectionReusableView {
     
-    static let identifier = "SectionHeader"
+    static let identifier = "TitleSupplementaryView"
 
     // MARK: - Properties
     private lazy var stackView = UIStackView(arrangedSubviews: [
@@ -50,7 +50,7 @@ class SectionHeader: UICollectionReusableView {
         
         stackView.snp.makeConstraints { make in
             make.top.equalToSuperview().inset(8)
-            make.leading.trailing.equalToSuperview().inset(20)
+            make.leading.trailing.equalToSuperview().inset(15)
             make.bottom.equalToSuperview().inset(9)
         }
         

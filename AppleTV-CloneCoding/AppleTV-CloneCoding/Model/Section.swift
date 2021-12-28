@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum Section: CaseIterable, Hashable {
+enum Section: Int, CaseIterable, Hashable {
     case Big, Middle, Small
 }
