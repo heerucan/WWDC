@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4628BF9703FF90F2C90818C6 /* Pods_AppleTV_CloneCoding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB575BA9EC095592AAE1C9F /* Pods_AppleTV_CloneCoding.framework */; };
+		5B5FF8122778281500B7C017 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5FF8112778281500B7C017 /* Section.swift */; };
+		5B785C32277465B000DD8DEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B785C31277465B000DD8DEF /* AppDelegate.swift */; };
+		5B785C34277465B000DD8DEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B785C33277465B000DD8DEF /* SceneDelegate.swift */; };
+		5B785C36277465B000DD8DEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B785C35277465B000DD8DEF /* ViewController.swift */; };
+		5B785C39277465B000DD8DEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B785C37277465B000DD8DEF /* Main.storyboard */; };
+		5B785C3B277465B300DD8DEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B785C3A277465B300DD8DEF /* Assets.xcassets */; };
+		5B785C3E277465B300DD8DEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B785C3C277465B300DD8DEF /* LaunchScreen.storyboard */; };
+		5B909FF82775EF2D000F44CE /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B909FF72775EF2D000F44CE /* Movie.swift */; };
+		5B909FFB2775F3DE000F44CE /* TitleSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B909FFA2775F3DE000F44CE /* TitleSupplementaryView.swift */; };
+		5B909FFE2776374F000F44CE /* PosterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B909FFD2776374F000F44CE /* PosterCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		05FC1E7EB1159F50D366C289 /* Pods-AppleTV-CloneCoding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleTV-CloneCoding.debug.xcconfig"; path = "Target Support Files/Pods-AppleTV-CloneCoding/Pods-AppleTV-CloneCoding.debug.xcconfig"; sourceTree = "<group>"; };
+		5B5FF8112778281500B7C017 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		5B785C2E277465B000DD8DEF /* AppleTV-CloneCoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppleTV-CloneCoding.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B785C31277465B000DD8DEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5B785C33277465B000DD8DEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5B785C35277465B000DD8DEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5B785C38277465B000DD8DEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5B785C3A277465B300DD8DEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B785C3D277465B300DD8DEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5B785C3F277465B300DD8DEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B909FF72775EF2D000F44CE /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		5B909FFA2775F3DE000F44CE /* TitleSupplementaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSupplementaryView.swift; sourceTree = "<group>"; };
+		5B909FFD2776374F000F44CE /* PosterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterCollectionViewCell.swift; sourceTree = "<group>"; };
+		9EB575BA9EC095592AAE1C9F /* Pods_AppleTV_CloneCoding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppleTV_CloneCoding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A629999E5E3C5E98CE72BCA8 /* Pods-AppleTV-CloneCoding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleTV-CloneCoding.release.xcconfig"; path = "Target Support Files/Pods-AppleTV-CloneCoding/Pods-AppleTV-CloneCoding.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B785C2B277465B000DD8DEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4628BF9703FF90F2C90818C6 /* Pods_AppleTV_CloneCoding.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B5FF81327782B9000B7C017 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				5B785C31277465B000DD8DEF /* AppDelegate.swift */,
+				5B785C33277465B000DD8DEF /* SceneDelegate.swift */,
+				5B785C37277465B000DD8DEF /* Main.storyboard */,
+				5B785C3C277465B300DD8DEF /* LaunchScreen.storyboard */,
+				5B785C3A277465B300DD8DEF /* Assets.xcassets */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		5B785C25277465B000DD8DEF = {
+			isa = PBXGroup;
+			children = (
+				5B785C30277465B000DD8DEF /* AppleTV-CloneCoding */,
+				5B785C2F277465B000DD8DEF /* Products */,
+				F4C004F54D88272D07BE1C14 /* Pods */,
+				96EAC18903A8F7EAF6438033 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5B785C2F277465B000DD8DEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B785C2E277465B000DD8DEF /* AppleTV-CloneCoding.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B785C30277465B000DD8DEF /* AppleTV-CloneCoding */ = {
+			isa = PBXGroup;
+			children = (
+				5B909FF42775E66B000F44CE /* Model */,
+				5B909FF92775F3C2000F44CE /* View */,
+				5B785C35277465B000DD8DEF /* ViewController.swift */,
+				5B5FF81327782B9000B7C017 /* Support */,
+				5B785C3F277465B300DD8DEF /* Info.plist */,
+			);
+			path = "AppleTV-CloneCoding";
+			sourceTree = "<group>";
+		};
+		5B909FF42775E66B000F44CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5B5FF8112778281500B7C017 /* Section.swift */,
+				5B909FF72775EF2D000F44CE /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5B909FF92775F3C2000F44CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5B909FFA2775F3DE000F44CE /* TitleSupplementaryView.swift */,
+				5B909FFC27763734000F44CE /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5B909FFC27763734000F44CE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5B909FFD2776374F000F44CE /* PosterCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		96EAC18903A8F7EAF6438033 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EB575BA9EC095592AAE1C9F /* Pods_AppleTV_CloneCoding.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4C004F54D88272D07BE1C14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05FC1E7EB1159F50D366C289 /* Pods-AppleTV-CloneCoding.debug.xcconfig */,
+				A629999E5E3C5E98CE72BCA8 /* Pods-AppleTV-CloneCoding.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B785C2D277465B000DD8DEF /* AppleTV-CloneCoding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B785C42277465B300DD8DEF /* Build configuration list for PBXNativeTarget "AppleTV-CloneCoding" */;
+			buildPhases = (
+				E3656CDB8E01C3BEA503D05F /* [CP] Check Pods Manifest.lock */,
+				5B785C2A277465B000DD8DEF /* Sources */,
+				5B785C2B277465B000DD8DEF /* Frameworks */,
+				5B785C2C277465B000DD8DEF /* Resources */,
+				383F92D9EB7082D655FCF167 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AppleTV-CloneCoding";
+			productName = "AppleTV-CloneCoding";
+			productReference = 5B785C2E277465B000DD8DEF /* AppleTV-CloneCoding.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B785C26277465B000DD8DEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					5B785C2D277465B000DD8DEF = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 5B785C29277465B000DD8DEF /* Build configuration list for PBXProject "AppleTV-CloneCoding" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B785C25277465B000DD8DEF;
+			productRefGroup = 5B785C2F277465B000DD8DEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B785C2D277465B000DD8DEF /* AppleTV-CloneCoding */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B785C2C277465B000DD8DEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B785C3E277465B300DD8DEF /* LaunchScreen.storyboard in Resources */,
+				5B785C3B277465B300DD8DEF /* Assets.xcassets in Resources */,
+				5B785C39277465B000DD8DEF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		383F92D9EB7082D655FCF167 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppleTV-CloneCoding/Pods-AppleTV-CloneCoding-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppleTV-CloneCoding/Pods-AppleTV-CloneCoding-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppleTV-CloneCoding/Pods-AppleTV-CloneCoding-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3656CDB8E01C3BEA503D05F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppleTV-CloneCoding-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B785C2A277465B000DD8DEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B5FF8122778281500B7C017 /* Section.swift in Sources */,
+				5B785C36277465B000DD8DEF /* ViewController.swift in Sources */,
+				5B909FFE2776374F000F44CE /* PosterCollectionViewCell.swift in Sources */,
+				5B909FFB2775F3DE000F44CE /* TitleSupplementaryView.swift in Sources */,
+				5B785C32277465B000DD8DEF /* AppDelegate.swift in Sources */,
+				5B785C34277465B000DD8DEF /* SceneDelegate.swift in Sources */,
+				5B909FF82775EF2D000F44CE /* Movie.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5B785C37277465B000DD8DEF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B785C38277465B000DD8DEF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5B785C3C277465B300DD8DEF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B785C3D277465B300DD8DEF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B785C40277465B300DD8DEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5B785C41277465B300DD8DEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B785C43277465B300DD8DEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05FC1E7EB1159F50D366C289 /* Pods-AppleTV-CloneCoding.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5GQ6QL9S3X;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AppleTV-CloneCoding/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ruheekim.AppleTV-CloneCoding";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B785C44277465B300DD8DEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A629999E5E3C5E98CE72BCA8 /* Pods-AppleTV-CloneCoding.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5GQ6QL9S3X;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AppleTV-CloneCoding/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ruheekim.AppleTV-CloneCoding";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B785C29277465B000DD8DEF /* Build configuration list for PBXProject "AppleTV-CloneCoding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B785C40277465B300DD8DEF /* Debug */,
+				5B785C41277465B300DD8DEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B785C42277465B300DD8DEF /* Build configuration list for PBXNativeTarget "AppleTV-CloneCoding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B785C43277465B300DD8DEF /* Debug */,
+				5B785C44277465B300DD8DEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B785C26277465B000DD8DEF /* Project object */;
+}
