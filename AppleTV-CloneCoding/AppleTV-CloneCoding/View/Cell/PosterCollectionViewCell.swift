@@ -1,5 +1,5 @@
 //
-//  SmallCollectionViewCell.swift
+//  BigPosterCollectionViewCell.swift
 //  AppleTV-CloneCoding
 //
 //  Created by Thisisme Hi on 2021/12/25.
@@ -7,15 +7,15 @@
 
 import UIKit
 
-class SmallCollectionViewCell: UICollectionViewCell {
+class PosterCollectionViewCell: UICollectionViewCell {
     
-    static let identifier = "SmallCollectionViewCell"
+    static let identifier = "PosterCollectionViewCell"
     
     var movie: Movie? {
-        didSet {
-            guard let movie = movie else { return }
-            posterImageView.image = movie.poster
-        }
+      didSet {
+          guard let movie = movie else { return }
+          posterImageView.image = movie.poster
+      }
     }
     
     // MARK: - Properties
@@ -48,8 +48,8 @@ class SmallCollectionViewCell: UICollectionViewCell {
         
         posterImageView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
-            make.width.equalTo(163)
-            make.height.equalTo(92)
+            make.width.equalTo(338)
+            make.height.equalTo(453)
         }
     }
 }

@@ -8,5 +8,5 @@
 import Foundation
 
 enum Section: Int, CaseIterable, Hashable {
-    case Big, Middle, Small
+    case Big, Middle, Small, Nano
 }

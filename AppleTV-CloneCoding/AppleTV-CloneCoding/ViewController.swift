@@ -28,6 +28,7 @@ class ViewController: UIViewController {
         configure()
         configureDataSource()
         applySnapshot()
+        applySnapshot()
     }
     
     private func configure() {
@@ -47,10 +48,21 @@ extension ViewController {
             (sectionIndex: Int, layoutEnv: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection? in
             guard let sectionKind = Section(rawValue: sectionIndex) else { return nil }
             switch sectionKind {
-            case .Big:  return self.createBigCellSection()
-            case .Middle:  return self.createMiddleCellSection()
-            case .Small:  return self.createSmallCellSection()
-            default: return nil
+            case .Big:
+                
+                return self.createBigCellSection()
+                
+            case .Middle:
+                return self.createSmallCellSection()
+                
+            case .Small:
+                return self.createMiddleCellSection()
+                
+            case .Nano:
+                return self.createSmallCellSection()
+                
+            default:
+                return nil
             }
         }
         
@@ -149,45 +161,18 @@ extension ViewController {
 extension ViewController {
     private func configureDataSource() {
         
-        let bigCellRegistration = UICollectionView.CellRegistration
-        <BigPosterCollectionViewCell, Movie> { (cell, indexPath, movie) in
-            cell.movie = movie
-        }
-        
-        let middleCellRegistration = UICollectionView.CellRegistration
-        <BigPosterCollectionViewCell, Movie> { (cell, indexPath, movie) in
-            cell.movie = movie
-        }
-        
-        let smallCellRegistration = UICollectionView.CellRegistration
-        <BigPosterCollectionViewCell, Movie> { (cell, indexPath, movie) in
+        let cellRegistration = UICollectionView.CellRegistration
+        <PosterCollectionViewCell, Movie> { (cell, indexPath, movie) in
             cell.movie = movie
         }
         
         dataSource = UICollectionViewDiffableDataSource
         <Section, Movie>(collectionView: collectionView) {
-            (collectionView: UICollectionView, indexPath: IndexPath, item: Movie) -> UICollectionViewCell? in
-            switch indexPath.section {
-            case 0, 5:
-                return collectionView.dequeueConfiguredReusableCell(
-                    using: bigCellRegistration,
-                    for: indexPath,
-                    item: item)
-                
-            case 1, 2, 3, 4, 7, 9:
-                return collectionView.dequeueConfiguredReusableCell(
-                    using: smallCellRegistration,
-                    for: indexPath,
-                    item: item)
-                
-            case 6, 8, 10, 11:
-                return collectionView.dequeueConfiguredReusableCell(
-                    using: middleCellRegistration,
-                    for: indexPath,
-                    item: item)
-            default:
-                return nil
-            }
+            collectionView, indexPath, itemIdentifier in
+            return collectionView.dequeueConfiguredReusableCell(
+                using: cellRegistration,
+                for: indexPath,
+                item: itemIdentifier)
         }
         
         let supplementaryRegistration = UICollectionView.SupplementaryRegistration
@@ -195,7 +180,7 @@ extension ViewController {
             (supplementaryView, string, indexPath) in
             guard let section = Section(rawValue: indexPath.section) else { fatalError("Unknown section") }
             switch section {
-            case .Big: break
+            case .Big, .Nano: break
                 
             case .Middle:
                 supplementaryView.titleLabel.text = "좋은 영화 착한 가격"
@@ -204,6 +189,7 @@ extension ViewController {
             case .Small:
                 supplementaryView.titleLabel.text = "할인가로 즐기는 연말에 볼만한 영화"
                 supplementaryView.button.setTitle("전체보기", for: .normal)
+        
             }
         }
         
@@ -214,25 +200,16 @@ extension ViewController {
     }
     
     private func applySnapshot() {
-        /// Section 추가
+ 
         let sections = Section.allCases
         var snapShot = Snapshot()
         snapShot.appendSections(sections)
-        
-        /// BannerItem 추가
-        let movieItem = Movie.allBigMovies
-        var movieSnapshot = NSDiffableDataSourceSectionSnapshot<Movie>()
-        movieSnapshot.append(movieItem)
-        dataSource.apply(movieSnapshot, to: .Big, animatingDifferences: true)
-        
-        let middleMovieItem = Movie.allMiddleMovies
-        var middleMovieSnapshot = NSDiffableDataSourceSectionSnapshot<Movie>()
-        middleMovieSnapshot.append(middleMovieItem)
-        dataSource.apply(middleMovieSnapshot, to: .Small, animatingDifferences: true)
-        
-        let smallMovieItem = Movie.allSmallMovies
-        var smallMovieSnapshot = NSDiffableDataSourceSectionSnapshot<Movie>()
-        smallMovieSnapshot.append(smallMovieItem)
-        dataSource.apply(smallMovieSnapshot, to: .Middle, animatingDifferences: true)
+
+        snapShot.appendItems(Movie.allBigMovies, toSection: .Big)
+        snapShot.appendItems(Movie.allMiddleMovies, toSection: .Middle)
+        snapShot.appendItems(Movie.allSmallMovies, toSection: .Small)
+        snapShot.appendItems(Movie.allNanoMovies, toSection: .Nano)
+
+        dataSource.apply(snapShot, animatingDifferences: false)
     }
 }

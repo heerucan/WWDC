@@ -55,9 +55,8 @@ class TitleSupplementaryView: UICollectionReusableView {
         }
         
         button.snp.makeConstraints { make in
-            make.top.equalToSuperview().inset(13)
-            make.trailing.equalToSuperview().inset(22)
-            make.bottom.equalToSuperview().inset(8)
+            make.top.equalToSuperview().inset(3)
+            make.trailing.equalToSuperview().inset(8)
             make.width.equalTo(52)
         }
     }

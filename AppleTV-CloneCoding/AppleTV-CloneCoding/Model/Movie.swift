@@ -42,18 +42,26 @@ extension Movie {
     
     static let allMiddleMovies = [
         Movie(poster: UIImage(named: "imgMiddlePoster"), genre: nil, price: nil),
+        Movie(poster: UIImage(named: "imgSmallPoster"), genre: nil, price: nil),
         Movie(poster: UIImage(named: "imgMiddlePoster"), genre: nil, price: nil),
-        Movie(poster: UIImage(named: "imgMiddlePoster"), genre: nil, price: nil),
-        Movie(poster: UIImage(named: "imgMiddlePoster"), genre: nil, price: nil),
+        Movie(poster: UIImage(named: "imgSmallPoster"), genre: nil, price: nil),
         Movie(poster: UIImage(named: "imgMiddlePoster"), genre: nil, price: nil),
         Movie(poster: UIImage(named: "imgMiddlePoster"), genre: nil, price: nil)
     ]
     
     static let allSmallMovies = [
         Movie(poster: UIImage(named: "imgSmallPoster"), genre: nil, price: nil),
+        Movie(poster: UIImage(named: "imgMiddlePoster"), genre: nil, price: nil),
         Movie(poster: UIImage(named: "imgSmallPoster"), genre: nil, price: nil),
+        Movie(poster: UIImage(named: "imgMiddlePoster"), genre: nil, price: nil),
+        Movie(poster: UIImage(named: "imgSmallPoster"), genre: nil, price: nil)
+    ]
+    
+    static let allNanoMovies = [
         Movie(poster: UIImage(named: "imgSmallPoster"), genre: nil, price: nil),
+        Movie(poster: UIImage(named: "imgMiddlePoster"), genre: nil, price: nil),
         Movie(poster: UIImage(named: "imgSmallPoster"), genre: nil, price: nil),
+        Movie(poster: UIImage(named: "imgMiddlePoster"), genre: nil, price: nil),
         Movie(poster: UIImage(named: "imgSmallPoster"), genre: nil, price: nil)
     ]
 }
