@@ -28,7 +28,6 @@ class ViewController: UIViewController {
         configure()
         configureDataSource()
         applySnapshot()
-        applySnapshot()
     }
     
     private func configure() {
@@ -48,28 +47,26 @@ extension ViewController {
             (sectionIndex: Int, layoutEnv: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection? in
             guard let sectionKind = Section(rawValue: sectionIndex) else { return nil }
             switch sectionKind {
-            case .Big:
-                
+            case .FirstBig:
                 return self.createBigCellSection()
                 
             case .Middle:
                 return self.createSmallCellSection()
                 
-            case .Small:
+            case .FirstSmall:
                 return self.createMiddleCellSection()
                 
-            case .Nano:
+            case .SecondSmall:
                 return self.createSmallCellSection()
                 
-            default:
-                return nil
+            case .SecondBig:
+                return self.createBigCellSection()
             }
         }
         
         let config = UICollectionViewCompositionalLayoutConfiguration()
         config.interSectionSpacing = 20
         layout.configuration = config
-        
         return layout
     }
     
@@ -91,7 +88,7 @@ extension ViewController {
             heightDimension: .fractionalHeight(1))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         item.contentInsets = NSDirectionalEdgeInsets(
-            top: 0, leading: 10, bottom: 0, trailing: 10)
+            top: 0, leading: 3, bottom: 0, trailing: 10)
         
         let groupSize = NSCollectionLayoutSize(
             widthDimension: .estimated(338),
@@ -103,7 +100,7 @@ extension ViewController {
         let section = NSCollectionLayoutSection(group: group)
         section.orthogonalScrollingBehavior = .groupPagingCentered
         section.contentInsets = NSDirectionalEdgeInsets(
-            top: 32, leading: 10, bottom: 0, trailing: 32)
+            top: 28, leading: 10, bottom: 0, trailing: 32)
         return section
     }
     
@@ -180,16 +177,19 @@ extension ViewController {
             (supplementaryView, string, indexPath) in
             guard let section = Section(rawValue: indexPath.section) else { fatalError("Unknown section") }
             switch section {
-            case .Big, .Nano: break
+            case .FirstBig, .SecondBig: break
                 
             case .Middle:
                 supplementaryView.titleLabel.text = "좋은 영화 착한 가격"
                 supplementaryView.button.setTitle("전체보기", for: .normal)
                 
-            case .Small:
+            case .FirstSmall:
                 supplementaryView.titleLabel.text = "할인가로 즐기는 연말에 볼만한 영화"
                 supplementaryView.button.setTitle("전체보기", for: .normal)
-        
+                
+            case .SecondSmall:
+                supplementaryView.titleLabel.text = "가슴 설레는 대만 영화"
+                supplementaryView.button.setTitle("전체보기", for: .normal)
             }
         }
         
@@ -200,15 +200,15 @@ extension ViewController {
     }
     
     private func applySnapshot() {
- 
         let sections = Section.allCases
         var snapShot = Snapshot()
         snapShot.appendSections(sections)
 
-        snapShot.appendItems(Movie.allBigMovies, toSection: .Big)
+        snapShot.appendItems(Movie.allBigMovies, toSection: .FirstBig)
         snapShot.appendItems(Movie.allMiddleMovies, toSection: .Middle)
-        snapShot.appendItems(Movie.allSmallMovies, toSection: .Small)
-        snapShot.appendItems(Movie.allNanoMovies, toSection: .Nano)
+        snapShot.appendItems(Movie.allSmallMovies, toSection: .FirstSmall)
+        snapShot.appendItems(Movie.allSecondBigMovies, toSection: .SecondBig)
+        snapShot.appendItems(Movie.allSecondSmallMovies, toSection: .SecondSmall)
 
         dataSource.apply(snapShot, animatingDifferences: false)
     }
