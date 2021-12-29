@@ -28,7 +28,6 @@ class ViewController: UIViewController {
         configure()
         configureDataSource()
         applySnapshot()
-        applySnapshot()
     }
     
     private func configure() {
@@ -201,7 +200,6 @@ extension ViewController {
     }
     
     private func applySnapshot() {
- 
         let sections = Section.allCases
         var snapShot = Snapshot()
         snapShot.appendSections(sections)
