@@ -48,8 +48,6 @@ class PosterCollectionViewCell: UICollectionViewCell {
         
         posterImageView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
-            make.width.equalTo(338)
-            make.height.equalTo(453)
         }
     }
 }

@@ -11,15 +11,9 @@ class Movie: Hashable {
         
     var id = UUID()
     var poster: UIImage?
-    var genre: String?
-    var price: Int?
     
-    init(poster: UIImage? = nil,
-         genre: String? = nil,
-         price: Int? = nil) {
+    init(poster: UIImage? = nil) {
         self.poster = poster
-        self.genre = genre
-        self.price = price
     }
     
     func hash(into hasher: inout Hasher) {
@@ -33,35 +27,43 @@ class Movie: Hashable {
 
 extension Movie {
     static let allBigMovies = [
-        Movie(poster: UIImage(named: "imgBigPoster"), genre: nil, price: nil),
-        Movie(poster: UIImage(named: "imgBigPoster"), genre: nil, price: nil),
-        Movie(poster: UIImage(named: "imgBigPoster"), genre: nil, price: nil),
-        Movie(poster: UIImage(named: "imgBigPoster"), genre: nil, price: nil),
-        Movie(poster: UIImage(named: "imgBigPoster"), genre: nil, price: nil)
+        Movie(poster: UIImage(named: "imgBigPoster")),
+        Movie(poster: UIImage(named: "imgBigPoster")),
+        Movie(poster: UIImage(named: "imgBigPoster")),
+        Movie(poster: UIImage(named: "imgBigPoster")),
+        Movie(poster: UIImage(named: "imgBigPoster"))
     ]
     
     static let allMiddleMovies = [
-        Movie(poster: UIImage(named: "imgMiddlePoster"), genre: nil, price: nil),
-        Movie(poster: UIImage(named: "imgSmallPoster"), genre: nil, price: nil),
-        Movie(poster: UIImage(named: "imgMiddlePoster"), genre: nil, price: nil),
-        Movie(poster: UIImage(named: "imgSmallPoster"), genre: nil, price: nil),
-        Movie(poster: UIImage(named: "imgMiddlePoster"), genre: nil, price: nil),
-        Movie(poster: UIImage(named: "imgMiddlePoster"), genre: nil, price: nil)
+        Movie(poster: UIImage(named: "imgMiddlePoster")),
+        Movie(poster: UIImage(named: "imgSmallPoster")),
+        Movie(poster: UIImage(named: "imgMiddlePoster")),
+        Movie(poster: UIImage(named: "imgSmallPoster")),
+        Movie(poster: UIImage(named: "imgMiddlePoster")),
+        Movie(poster: UIImage(named: "imgMiddlePoster"))
     ]
     
     static let allSmallMovies = [
-        Movie(poster: UIImage(named: "imgSmallPoster"), genre: nil, price: nil),
-        Movie(poster: UIImage(named: "imgMiddlePoster"), genre: nil, price: nil),
-        Movie(poster: UIImage(named: "imgSmallPoster"), genre: nil, price: nil),
-        Movie(poster: UIImage(named: "imgMiddlePoster"), genre: nil, price: nil),
-        Movie(poster: UIImage(named: "imgSmallPoster"), genre: nil, price: nil)
+        Movie(poster: UIImage(named: "imgSmallPoster")),
+        Movie(poster: UIImage(named: "imgMiddlePoster")),
+        Movie(poster: UIImage(named: "imgSmallPoster")),
+        Movie(poster: UIImage(named: "imgMiddlePoster")),
+        Movie(poster: UIImage(named: "imgSmallPoster"))
     ]
     
-    static let allNanoMovies = [
-        Movie(poster: UIImage(named: "imgSmallPoster"), genre: nil, price: nil),
-        Movie(poster: UIImage(named: "imgMiddlePoster"), genre: nil, price: nil),
-        Movie(poster: UIImage(named: "imgSmallPoster"), genre: nil, price: nil),
-        Movie(poster: UIImage(named: "imgMiddlePoster"), genre: nil, price: nil),
-        Movie(poster: UIImage(named: "imgSmallPoster"), genre: nil, price: nil)
+    static let allSecondSmallMovies = [
+        Movie(poster: UIImage(named: "imgSmallPoster")),
+        Movie(poster: UIImage(named: "imgMiddlePoster")),
+        Movie(poster: UIImage(named: "imgSmallPoster")),
+        Movie(poster: UIImage(named: "imgMiddlePoster")),
+        Movie(poster: UIImage(named: "imgSmallPoster"))
+    ]
+    
+    static let allSecondBigMovies = [
+        Movie(poster: UIImage(named: "imgBigPoster")),
+        Movie(poster: UIImage(named: "imgBigPoster")),
+        Movie(poster: UIImage(named: "imgBigPoster")),
+        Movie(poster: UIImage(named: "imgBigPoster")),
+        Movie(poster: UIImage(named: "imgBigPoster"))
     ]
 }
