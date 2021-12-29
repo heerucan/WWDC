@@ -9,6 +9,10 @@ import UIKit
 
 class VideosViewController: UIViewController {
     
+    enum Section {
+      case main
+    }
+    
     private var videoList = Video.allVideos
     
     @IBOutlet weak var searchBar: UISearchBar!
