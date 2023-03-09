@@ -13,6 +13,7 @@ Apple의 WWDC 세션에 소개되는 다양한 기술들을 공부하고 정리�
 |:-:|:-|:-|
 |`WWDC19`|`Advances in Data Source`<br>`Advances in Diffable Data Source`|[`CollectionView and DiffableDataSource 실습`](https://www.notion.so/huree-can-do-it/DiffableDataSource-34a7d433b21243709d8848d31a780702)|
 |`WWDC19`<br>`WWDC20`|`Advances in Collection View Layout`<br>`Advances in Diffable Data Source`|`AppleTV 영화탭 클론코딩 실습` [`이슈#1`](https://github.com/heerucan/WWDC/issues/1)  [`풀리퀘`](https://github.com/heerucan/WWDC/pull/2)|
+|`WWDC21`|`Make blazing fast lists and collection views`|https://huree-can-do-it.notion.site/WWDC21-Make-blazing-fast-lists-and-collection-views-1ccca8d7896149ec8e9c889cc47b37c2|
 
 
 
